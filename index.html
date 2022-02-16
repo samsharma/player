@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>palyer</title>
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body onload="currentStatus()">
+        <div class="mylist">
+            <div class="mylist-big-video">
+                <div class="video-holderbox">
+                    <div class="palyer">
+                        <video class="palyer__video viewer"  preload="metadata" >
+                            <source src="media/videoSong1.mp4" type="video/mp4">
+                            <!-- <source src="video/sintel-short.webm" type="video/webm"> -->
+                            <track label="English" kind="subtitles" srclang="en" src="media/sample.vtt" default>
+                        </video>
+                        <div class="palyer__controls">
+                            <div class="progress">
+                                <div class="progress__filled"></div>
+                               
+
+                            </div>
+                            <div class="action-box">
+                                <div class="action-left-box">
+                                    <button class="palyer__button toggle " title="toggle play "> <i class="bi bi-play-fill "></i></button>
+                                    <div class="volumeBtn">
+                                        <div class="volume-icon">
+                                            <i class='bi bi-volume-up-fill'></i>                                          
+                                        </div>
+                                        <div class="volume-show-box">
+                                            <div class="toolHolder">
+                                                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.1" value="0.1"><span>10%</span>
+                                                <div class="volumeWrapper"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playbackRate-btn">
+                                        <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2.0" step="0.5" value="1">
+                                        
+                                        <span>1%</span>
+                                    </div>
+                                    <div class="clockAndanticlock">
+                                        <button data-skip="-10" class="palyer__button "> <span>10s</span> <i class="bi bi-arrow-counterclockwise"></i> </button>
+                                        <button data-skip="15" class="palyer__button "> <span>15s</span> <i class="bi bi-arrow-clockwise"></i></button>
+                                    </div>
+                                </div>
+                                <div class="videoPlayStatus">
+                                    <ul>
+                                        <li class="viiewTime">00:00</li>
+                                        <li class="totalTime">00:00</li>
+                                    </ul>
+                                </div>
+                                <div class="action-right-box">
+                                    <div class="notes-box">
+                                        <i class="bi bi-receipt"></i>
+                                    </div>
+                                
+                                    <div class="caption-box"> 
+                                        <i class="bi bi-badge-cc-fill"></i>                      
+                                    </div>
+                                    <div class="fullScreen-box">
+                                        <div class="fullScreen-expand">
+                                            <i class="bi bi-arrows-angle-expand"></i>
+                                        </div>
+                                        <div class="fullScreen-unexpand">
+                                            <i class="bi bi-arrows-angle-contract"></i>
+                                        </div>
+                                    </div>
+                                    <div class="Expanded-box">
+                                        <div class="iconHolder-expand">
+                                            <i class="bi bi-arrows-angle-expand"></i>
+                                        </div>
+                                        <div class="iconHolder-unexpand">
+                                            <i class="bi bi-arrows-angle-contract"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mylist-items">
+                <div class="icon">
+                    <i class="bi bi-123"></i>
+                    <div class="label">123</div>
+                  </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        
+  
+        <script src="js/video-script.js" ></script>
+    </body>
+</html>
