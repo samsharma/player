@@ -1,4 +1,5 @@
 # Video player
+this is first variation of Video player
 This is an HTML5 video player that is Customized by javascript
 
 
