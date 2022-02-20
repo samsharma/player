@@ -136,6 +136,8 @@ function togglePlay(){
     video[method]();
 }
 
+
+
 function updateButton(){
     //const icon = this.paused ? '▶' : '⏸';
     //toggle.textContent = icon;
@@ -145,6 +147,8 @@ function updateButton(){
         toggle.innerHTML = "<i class='bi bi-pause-circle'></i>";
     }
 }
+
+
 
 function skip(){
     video.currentTime += parseFloat(this.dataset.skip);
@@ -274,6 +278,8 @@ function daynamicValueVolume() {
     video.volume = getOriginaltag;
 }
 
+
+
 // fullScreen
 
 function openFullscreen() {
@@ -334,12 +340,16 @@ for (var i = 0, L = tracks.length; i < L; i++) { /* tracks.length == 10 */
 
 
 
+function playByButton(){
+  video.click();
+
+}
 
 
-/*====================end of factions ==========================/////// */
+/*====================end of factions ========================= */
 
 
-
+console.log(toggle);
 /*/=========================== Actions==========================*/
 
 video.addEventListener('click', togglePlay);
@@ -351,7 +361,7 @@ video.addEventListener('click', daynamicValueVolume);
 
 openfullScreenBox.addEventListener('click', openFullscreen);
 closefullScreenBox.addEventListener('click', closeFullscreen);
-
+toggle.addEventListener('click', playByButton);
 fullScreenBox.addEventListener('click', fullwidthvideo);
 
 subtitles.addEventListener('click', captionBox);
